@@ -33,7 +33,7 @@ const HomePage = () => {
 
     // const current = data?.pages[0].results[0].id;
     const response = await axios.get<fetchResponse>(
-      "https://odi8wtd75f.execute-api.us-east-2.amazonaws.com/Dev/food",
+      "http://3.12.120.59:3000/food",
       {
         params: { page: pageParam, current: current },
       }
